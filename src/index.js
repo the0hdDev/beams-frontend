@@ -1,6 +1,6 @@
 const { app, BrowserWindow } = require('electron')
 
-const createWindow = () => {
+const createEnterCDataWindow = () => {
   const win = new BrowserWindow({
     width: 400,
     height: 500,
@@ -11,7 +11,19 @@ const createWindow = () => {
 
   win.loadFile('./src/frontend/enterCData.html')
 }
+const createMainWindow = () => {
+  const win = new BrowserWindow({
+    width: 900,
+    height: 700,
+    minimizable: false,
+    resizable: false,
+    icon: __dirname + '/frontend/assets/favicon.png'
+  })
+
+  win.loadFile('./src/frontend/index.html')
+}
 
 app.whenReady().then(() => {
-  createWindow()
+  createMainWindow()
+  createEnterCDataWindow()
 })
