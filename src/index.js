@@ -16,7 +16,7 @@ const createMainWindow = () => {
     width: 900,
     height: 700,
     minimizable: false,
-    resizable: false,
+    resizable: true,
     icon: __dirname + '/frontend/assets/favicon.png'
   })
 
