@@ -1,12 +1,109 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <title>Beam</title>
+    <title>Welcome to CLion</title>
+    <link rel="stylesheet" href="style/stylesheet.css">
 </head>
 <body>
-    
+    <div class="app-container">
+        <!-- Title bar -->
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="logo-section">
+                    <div class="logo-container">
+                        <div class="logo">CL</div>
+                        <div class="eap-badge">EAP</div>
+                    </div>
+                    <div class="app-info">
+                        <div class="app-name">CLion</div>
+                        <div class="app-version">2024.2 EAP (242.20306)</div>
+                    </div>
+                </div>
+                
+                <div class="sidebar-section projects-section">
+                    <div class="section-header">Projects</div>
+                    
+                    <div class="sidebar-item expandable">
+                        <div class="item-header">
+                            <span class="expand-icon">›</span>
+                            <span>Remote Development</span>
+                            <span class="badge">Beta</span>
+                        </div>
+                        
+                        <div class="nested-items">
+                            <div class="sidebar-item">
+                                <span class="item-icon">▶</span>
+                                <span>SSH</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-item">
+                        <span class="item-icon container-icon">□</span>
+                        <span>Dev Containers</span>
+                    </div>
+                </div>
+                
+                <div class="sidebar-options">
+                    <div class="sidebar-item">
+                        <span>Customize</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span>Plugins</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span>Learn</span>
+                    </div>
+                </div>
+                
+                <div class="sidebar-footer">
+                    <div class="settings-icon">⚙️</div>
+                </div>
+            </div>
+            
+            <!-- Welcome content -->
+            <div class="welcome-content">
+                <div class="welcome-header">
+                    <h1>Welcome to CLion</h1>
+                    <p class="welcome-text">
+                        Create a new project to start from scratch.<br>
+                        Open existing project from disk or version control.
+                    </p>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="action-button">
+                        <div class="action-icon plus">+</div>
+                        <div class="action-label">New Project</div>
+                    </div>
+                    <div class="action-button">
+                        <div class="action-icon folder">📁</div>
+                        <div class="action-label">Open</div>
+                    </div>
+                    <div class="action-button">
+                        <div class="action-icon git">🔄</div>
+                        <div class="action-label">Get from VCS</div>
+                    </div>
+                </div>
+                
+                <div class="onboarding-card">
+                    <div class="card-content">
+                        <div class="mascot-image"></div>
+                        <div class="card-text">
+                            <h2>Take a quick onboarding tour</h2>
+                            <p>New to CLion? Get the most out of your IDE. Become acquainted with its tools and basic workflows.</p>
+                            <button class="tour-button">Start Tour</button>
+                        </div>
+                    </div>
+                    <div class="close-button">×</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/sript.js"></script>
 </body>
-    LOL
 </html>

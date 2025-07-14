@@ -1,8 +1,8 @@
-/* General body styling for a modern professional app background */
+/* General body styling for CLion-themed dialog */
 body {
-    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif; /* Common fonts for modern desktop apps */
-    background-color: #e8e8e8; /* A slightly darker, more robust light gray */
-    color: #333; /* Standard dark text */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f7f9fa; /* CLion's light background color */
+    color: #333;
     margin: 0;
     padding: 30px;
     display: flex;
@@ -13,12 +13,12 @@ body {
 }
 
 .container {
-    background-color: #f8f8f8; /* A clean, very light gray for the main dialog area */
-    border: 1px solid #c0c0c0; /* A clear, but not overly thick, medium-gray border */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* A subtle, soft shadow for presence */
-    padding: 35px;
-    border-radius: 4px; /* A very subtle, standard rounding for modern apps */
-    width: 480px; /* Wider for more comfortable input layout */
+    background-color: white; /* CLion uses pure white for dialog backgrounds */
+    border: 1px solid #e0e0e0; /* Subtle border like CLion dialogs */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Lighter shadow matching CLion */
+    padding: 30px;
+    border-radius: 6px; /* CLion uses slightly more rounded corners */
+    width: 480px;
     box-sizing: border-box;
 }
 
@@ -27,16 +27,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .heading {
-    font-size: 24px;
-    font-weight: 500; /* Medium weight for headings, not fully bold */
-    color: #3c3c3c; /* A deep, neutral gray for the main title */
+    font-size: 22px;
+    font-weight: 500;
+    color: #1a1a1a; /* Darker heading color like in CLion */
     margin-bottom: 0;
-    padding-bottom: 10px; /* Padding for a subtle line */
-    border-bottom: 1px solid #ddd; /* A very light separator line */
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eef1f3; /* Very subtle separator like CLion */
     width: 100%;
 }
 
@@ -50,9 +50,9 @@ body {
 
 .lableip,
 .lableport {
-    font-size: 14px;
-    color: #444;
-    min-width: 80px; /* Consistent width for labels */
+    font-size: 13px;
+    color: #333;
+    min-width: 80px;
     text-align: right;
     margin-right: 20px;
     font-weight: normal;
@@ -61,28 +61,27 @@ body {
 .inputip,
 .inputport {
     flex-grow: 1;
-    padding: 9px 12px; /* Good comfortable padding for inputs */
-    border: 1px solid #a0a0a0; /* A neutral, slightly darker gray border */
-    border-radius: 3px; /* Slightly rounded for a softer but still structured look */
-    font-size: 14px;
-    color: #222;
-    background-color: #ffffff; /* White input background */
+    padding: 8px 10px;
+    border: 1px solid #d1d1d1; /* CLion's input border color */
+    border-radius: 4px;
+    font-size: 13px;
+    color: #1a1a1a;
+    background-color: #ffffff;
     box-sizing: border-box;
-    /* Subtle inner shadow for a bit of depth */
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
-    transition: border-color 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.03);
+    transition: border-color 0.2s ease;
 }
 
 .inputip::placeholder,
 .inputport::placeholder {
-    color: #888; /* Muted placeholder text */
+    color: #999;
 }
 
 .inputip:focus,
 .inputport:focus {
     outline: none;
- /* A professional, muted blue for focus (common in dev tools) */
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 1px #007acc; /* Focus outline */
+    border-color: #3b7de9; /* CLion's blue accent color */
+    box-shadow: 0 0 0 1px rgba(59, 125, 233, 0.4); /* CLion's focus effect */
 }
 
 .buttons {
@@ -94,48 +93,45 @@ body {
 
 .submit button,
 .cancel button {
-    padding: 10px 22px; /* Standard button size */
-    font-size: 14px;
-    font-weight: 500; /* Medium weight for button text */
-    border: 1px solid #999; /* Subtle gray border */
-    border-radius: 3px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 400; /* CLion buttons use normal weight */
+    border-radius: 4px;
     cursor: pointer;
-    color: #333; /* Dark text for buttons */
-    /* Subtle gradient for a bit of depth */
-    background: linear-gradient(to bottom, #f0f0f0 0%, #e0e0e0 100%);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); /* Soft shadow */
-    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-/* Primary (Submit) Button - a slightly more pronounced neutral or subtle accent */
+/* Primary (Submit) Button - CLion blue style */
 .submit button {
-   background: linear-gradient(to bottom, #f0f0f0 0%, #e0e0e0 100%);
-    
-    color: #000; /* White text for primary button */
+    background-color: #3b7de9; /* CLion's primary blue */
+    border: 1px solid #3b7de9;
+    color: white;
 }
 
 .submit button:hover {
-    
-    border-color: #006bb3;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    background-color: #2b6fd6; /* Slightly darker on hover */
+    border-color: #2b6fd6;
 }
 
 .submit button:active {
-    background: linear-gradient(to bottom, #005a99 0%, #004a80 100%);
-    border-color: #005a99;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
-    transform: translateY(0.5px);
+    background-color: #2264c7; /* Even darker on active */
+    border-color: #2264c7;
 }
 
-/* Secondary (Cancel) Button */
+/* Secondary (Cancel) Button - CLion style */
+.cancel button {
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    color: #333;
+}
+
 .cancel button:hover {
-    background: linear-gradient(to bottom, #e8e8e8 0%, #d0d0d0 100%);
-    border-color: #888;
+    background-color: #f5f5f5;
+    border-color: #c1c1c1;
 }
 
 .cancel button:active {
-    background: linear-gradient(to bottom, #d0d0d0 0%, #c0c0c0 100%);
-    border-color: #777;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    transform: translateY(0.5px);
+    background-color: #e9e9e9;
+    border-color: #b1b1b1;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
