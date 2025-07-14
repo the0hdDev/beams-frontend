@@ -13,7 +13,7 @@ const createEnterCDataWindow = () => {
 }
 const createMainWindow = () => {
   const win = new BrowserWindow({
-    width: 900,
+    width: 1000,
     height: 700,
     minimizable: false,
     resizable: true,
